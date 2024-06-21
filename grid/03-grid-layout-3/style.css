@@ -96,8 +96,9 @@ ul{
 }
 .article{
   display: grid;
-  gap:5px;
-  grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+  gap:15px;
+  grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 200px;
 }
 .nav > ul{
   display: grid;
@@ -117,19 +118,25 @@ ul{
 
 .sidebar{
   display: grid;
-  gap: 20px;
+  gap: 50px;
+  grid-template-rows: repeat(auto-fit, minmax(10px, 1fr));
+}
+.side-content,
+.photo{
+  display: grid;
+  align-items: center;
 }
 .container{
   display: grid;
-  grid-template-columns: 1fr 10fr;
-  grid-template-rows: 2fr 1fr 10fr 1fr;
-  gap: 5px;
+  grid-template-columns: 1fr 4fr;
+  gap: 4px;
 }
 .header{
   grid-column: 1/3;
 }
 .sidebar{
   grid-row: 2/4;
+
 }
 
 .footer{
